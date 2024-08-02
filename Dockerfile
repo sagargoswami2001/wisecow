@@ -26,7 +26,7 @@ COPY wisecow.sh .
 # Make the script executable
 RUN chmod +x wisecow.sh
 
-# Expose the port the app runs on
+# Expose the port the app runs on, you need to use port mapping (RUN: docker run -p 4499:4499 wisecow)
 EXPOSE 4499
 
 # Run the script
